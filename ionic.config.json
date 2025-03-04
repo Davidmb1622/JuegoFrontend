@@ -1,0 +1,7 @@
+{
+  "name": "Frontendjuego",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
