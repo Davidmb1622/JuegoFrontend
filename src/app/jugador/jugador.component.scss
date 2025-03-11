@@ -1,0 +1,91 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  margin-right: auto;
+}
+
+.jugadores-container {
+  min-height: 100vh; /* Cambiado de height a min-height */
+  padding: 10px;
+  text-align: center;
+  background: #e0f7fa;
+  border-radius: 8px;
+
+}
+
+
+.icon {
+  font-size: 80px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+form {
+  width: 100%;
+  max-width: 320px;
+}
+
+ion-item {
+  --highlight-color-focused: transparent;
+  --border-color: transparent;
+  --border-width: 0;
+  margin-bottom: 15px;
+}
+
+ion-label {
+  font-size: 14px;
+  color: #555;
+}
+
+ion-input {
+  background: #f8f8f8;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn {
+  margin-top: 15px;
+  background-color: #002060;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  margin-top: 15px;
+  background: #6c757d;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+}
+
+.signup-link {
+  margin-top: 15px;
+}
+
+.signup-link p {
+  font-size: 14px;
+  color: #333;
+}
+
+.signup-link a {
+  color: #002060;
+  font-weight: bold;
+  text-decoration: none;
+}

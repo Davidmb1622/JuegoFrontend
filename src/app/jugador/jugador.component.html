@@ -1,0 +1,18 @@
+<ion-header class="header">
+</ion-header>
+
+<ion-content class="ion-padding jugadores-container">
+  <ion-card class="jugador-card">
+    <ion-card-header>
+      <ion-card-title class="jugadores-title">Ingresa tu nombre para jugar</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item class="jugador-input">
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input [(ngModel)]="nuevoJugador.nombre"></ion-input>
+      </ion-item>
+      <ion-button expand="full" color="primary" class="btn" (click)="agregarJugador()">Comenzar Juego</ion-button>
+      <ion-button expand="full" color="secondary" class="btn-secondary" (click)="Verpartidas()">Ver Historial de Partidas</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

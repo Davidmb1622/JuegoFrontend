@@ -1,0 +1,47 @@
+
+<ion-content class="ion-padding">
+  <div *ngIf="!mostrarResultado" class="preguntas-container">
+    <h2 class="preguntas-title">Selecciona la respuesta correcta</h2>
+
+    <ion-list>
+      <ion-item *ngFor="let pregunta of preguntas; let i = index">
+        <ion-label>
+          <h3>{{ pregunta.pregunta }}</h3>
+        </ion-label>
+
+        <div class="botones">
+          <ion-button
+            color="success"
+            (click)="responder(i, true)"
+            [disabled]="respuestaUsuario[i] !== undefined">
+            ✅ Verdadero
+          </ion-button>
+          <ion-button
+            color="danger"
+            (click)="responder(i, false)"
+            [disabled]="respuestaUsuario[i] !== undefined">
+            ❌ Falso
+          </ion-button>
+        </div>
+
+        <p *ngIf="respuestaUsuario[i] !== undefined">
+          <strong>
+            {{ respuestaUsuario[i] === pregunta.respuesta ? '¡Correcto! 🎉' : 'Incorrecto 😢' }}
+          </strong>
+        </p>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="mostrarResultado" class="resultado-container">
+    <h2>¡Juego terminado!</h2>
+    <p>Tu puntaje final: <strong>{{ puntaje }}</strong> de {{ preguntas.length }}</p>
+    <ion-button color="primary" (click)="reiniciarJuego()">
+      🔄 Jugar de nuevo
+    </ion-button>
+    <ion-button color="primary" (click)="volveralinicio()">
+      Volver al menu
+    </ion-button>
+
+  </div>
+</ion-content>

@@ -1,0 +1,86 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.partidas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Cambiado de height a min-height */
+  padding: 10px; /* Reducción del espacio de padding */
+  text-align: center;
+  background: #ffebcc;
+  border-radius: 8px;
+  max-width: 600px; /* Limitar el ancho máximo para centrar */
+  margin: auto; /* Centrar el contenedor */
+}
+
+.partidas-title {
+  color: #ff9800;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ion-list-header {
+  text-align: center;
+}
+
+ion-item {
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+ion-label h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+ion-label p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Estilo para centrar y reducir el tamaño de la tabla */
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px; /* Reducir el tamaño máximo de la tabla */
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background: rgba(76, 175, 80, 0.1);
+}

@@ -1,0 +1,14 @@
+
+
+<ion-content class="ion-padding partidas-container">
+  <ion-list>
+    <ion-list-header class="partidas-title">Lista de Partidas</ion-list-header>
+    <ion-item *ngFor="let partida of partidas">
+      <ion-label>
+        <h2>ID: {{ partida.id }}</h2>
+        <p>Nombre: {{ partida.nombreJugador }}</p>
+        <p>Fecha: {{ partida.fecha | date:'short' }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
